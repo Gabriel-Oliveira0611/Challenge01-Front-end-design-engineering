@@ -1,0 +1,96 @@
+.sobre-section {
+  flex: 1;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+
+.sobre-container {
+  width: 85%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.sobre-intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-title {
+  font-size: 3.5rem;
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+}
+
+.sobre-text {
+  font-size: 1.6rem;
+  color: var(--color-gray);
+  line-height: 1.8;
+}
+
+.pilares-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pilar-card {
+  width: 30%;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pilar-icon {
+  font-size: 3.5rem;
+}
+
+.pilar-card h3 {
+  font-size: 2rem;
+  color: var(--color-dark);
+}
+
+.pilar-card p {
+  font-size: 1.45rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .sobre-title {
+    font-size: 2.8rem; 
+  }
+
+  .sobre-text {
+    font-size: 1.5rem;
+    text-align: justify; 
+  }
+
+  .pilares-grid {
+    flex-direction: column; 
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .pilar-card {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 2.5rem 2rem;
+  }
+}

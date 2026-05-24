@@ -1,0 +1,130 @@
+.integrantes-section {
+    flex: 1;
+    width: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+}
+
+.integrantes-container {
+    width: 85%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    margin-bottom: 5rem;
+}
+
+.cards-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.integrante-card {
+    width: 22%;
+    min-width: 240px;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.integrante-card:hover {
+    transform: translateY(-5px);
+}
+
+.foto-container {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 2rem;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary);
+}
+
+.integrante-card h3 {
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    margin-bottom: 0.8rem;
+    min-height: 4.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.rm-text {
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+@media (max-width: 1300px) {
+    .integrantes-container {
+        width: 90%;
+    }
+
+    .integrante-card {
+        width: 45%;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .cards-grid {
+        gap: 2.5rem;
+    }
+
+    .integrante-card {
+        width: 100%;
+        max-width: 280px;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .integrante-card h3 {
+        min-height: auto;
+    }
+}
